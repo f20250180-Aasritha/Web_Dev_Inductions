@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>To-Do List</title>
+  <style>
+    body {
+      background: Lavender;
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+    }
+    .todo-container {
+      background: LightCoral;
+      margin-top: 50px;
+      padding: 2rem 2.5rem 2.5rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      min-width: 350px;
+    }
+    h1 {
+      text-align: center;
+      color: Black;
+      margin-bottom: 1.5rem;
+    }
+    ul.todo-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.todo-list li {
+      display: flex;
+      align-items: center;
+      background: snow;
+      margin-bottom: 10px;
+      padding: 10px 12px;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background 0.2s;
+      cursor: pointer;
+      min-height: 32px;
+    }
+    ul.todo-list li label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      cursor: pointer;
+    }
+    ul.todo-list input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: #0984e3;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+    ul.todo-list li span {
+      color: red;
+      font-weight: bold;
+    }
+    ul.todo-list input[type="checkbox"]:checked + span {
+      text-decoration: line-through;
+      color: Green;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    <ul class="todo-list">
+      <li>
+        <label>
+          <input type="checkbox">
+          <span>Exercise</span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <span>Finish Pending Work</span>
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <span>Call mom</span>
+        </label> 
+      </li>
+      <li>
+        <label>
+          <input type="checkbox">
+          <span>Practice 1 coding question</span>
+        </label>
+      </li>
+  </ul>
+</div>
+</body>
+</html>
